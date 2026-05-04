@@ -1,0 +1,9 @@
+# Ignore environment files and data files
+.venv
+.env.*
+data/
+outputs/
+patents.db
+venv/
+requirements.txt
+

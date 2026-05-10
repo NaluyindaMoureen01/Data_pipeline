@@ -4,7 +4,7 @@ A high-performance data pipeline and interactive analytics dashboard for process
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 
 - **End-to-End Pipeline**: From raw TSV ingestion to relational database storage.
 - **Interactive Dashboard**: Premium UI with real-time filtering, geographic maps, and trend analysis.
@@ -14,7 +14,7 @@ A high-performance data pipeline and interactive analytics dashboard for process
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```text
 Data-pipeline/
@@ -36,7 +36,7 @@ Data-pipeline/
 
 ---
 
-## 🛠️ Getting Started
+##  Getting Started
 
 ### 1. Prerequisites
 Ensure you have Python 3.9+ and the required packages installed:
@@ -66,7 +66,7 @@ python scripts/console_report.py
 
 ---
 
-## 📊 Analytical Capabilities
+##  Analytical Capabilities
 
 The system provides deep insights across four primary dimensions:
 1. **Trends**: Annual grant counts with 5-year rolling averages and peak detection.
@@ -76,13 +76,10 @@ The system provides deep insights across four primary dimensions:
 
 ---
 
-## 📜 Project Requirements & Links
+##  Project Links
 
-- **Dashboard**: http://localhost:8501 (Local)
-- **GitHub**: [NaluyindaMoureen01/Data_pipeline](https://github.com/NaluyindaMoureen01/Data_pipeline)
-- **Database**: SQLite (managed via `sql/schema.sql`)
+-  Dashboard Links
+ Local URL: http://localhost:8501
+ Network URL: http://10.150.5.88:8501
 
 ---
-
-## ⚖️ License
-Distributed under the MIT License. See `LICENSE` for more information.

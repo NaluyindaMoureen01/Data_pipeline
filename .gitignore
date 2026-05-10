@@ -2,7 +2,6 @@
 .venv
 .env.*
 data/
-outputs/
 patents.db
 venv/
 requirements.txt

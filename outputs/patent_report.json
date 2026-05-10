@@ -1,0 +1,339 @@
+{
+  "total_patents": 500000,
+  "top_inventors": [
+    {
+      "rank": 1,
+      "name": "Kangguo Cheng",
+      "country": "US",
+      "patent_count": 164
+    },
+    {
+      "rank": 2,
+      "name": "Shunpei Yamazaki",
+      "country": "JP",
+      "patent_count": 146
+    },
+    {
+      "rank": 3,
+      "name": "Chen-Hua Yu",
+      "country": "TW",
+      "patent_count": 97
+    },
+    {
+      "rank": 4,
+      "name": "Jason K. Resch",
+      "country": "US",
+      "patent_count": 94
+    },
+    {
+      "rank": 5,
+      "name": "Hanbyul Seo",
+      "country": "KR",
+      "patent_count": 91
+    },
+    {
+      "rank": 6,
+      "name": "Roderick A. Hyde",
+      "country": "US",
+      "patent_count": 86
+    },
+    {
+      "rank": 7,
+      "name": "Wanshi Chen",
+      "country": "US",
+      "patent_count": 79
+    },
+    {
+      "rank": 8,
+      "name": "Peter Gaal",
+      "country": "US",
+      "patent_count": 78
+    },
+    {
+      "rank": 9,
+      "name": "Yunjung Yi",
+      "country": "KR",
+      "patent_count": 76
+    },
+    {
+      "rank": 10,
+      "name": "Frederick E. Shelton, IV",
+      "country": "US",
+      "patent_count": 75
+    },
+    {
+      "rank": 11,
+      "name": "Alexander Reznicek",
+      "country": "US",
+      "patent_count": 74
+    },
+    {
+      "rank": 12,
+      "name": "Joonkui Ahn",
+      "country": "KR",
+      "patent_count": 70
+    },
+    {
+      "rank": 13,
+      "name": "Lowell L. Wood, JR.",
+      "country": "US",
+      "patent_count": 70
+    },
+    {
+      "rank": 14,
+      "name": "Stuart C. Salter",
+      "country": "US",
+      "patent_count": 69
+    },
+    {
+      "rank": 15,
+      "name": "Suckchel Yang",
+      "country": "KR",
+      "patent_count": 68
+    },
+    {
+      "rank": 16,
+      "name": "Irwin Gerszberg",
+      "country": "US",
+      "patent_count": 67
+    },
+    {
+      "rank": 17,
+      "name": "Paul Shala Henry",
+      "country": "US",
+      "patent_count": 66
+    },
+    {
+      "rank": 18,
+      "name": "Tao Luo",
+      "country": "US",
+      "patent_count": 65
+    },
+    {
+      "rank": 19,
+      "name": "Aed M. Dudar",
+      "country": "US",
+      "patent_count": 64
+    },
+    {
+      "rank": 20,
+      "name": "Thomas M. Willis, III",
+      "country": "US",
+      "patent_count": 62
+    }
+  ],
+  "top_companies": [
+    {
+      "rank": 1,
+      "name": "International Business Machines Corporation",
+      "patent_count": 4385
+    },
+    {
+      "rank": 2,
+      "name": "SAMSUNG DISPLAY CO., LTD.",
+      "patent_count": 4347
+    },
+    {
+      "rank": 3,
+      "name": "CANON KABUSHIKI KAISHA",
+      "patent_count": 1599
+    },
+    {
+      "rank": 4,
+      "name": "Intel Corporation",
+      "patent_count": 1424
+    },
+    {
+      "rank": 5,
+      "name": "Taiwan Semiconductor Manufacturing Company, Ltd.",
+      "patent_count": 1379
+    },
+    {
+      "rank": 6,
+      "name": "FORD GLOBAL TECHNOLOGIES, LLC",
+      "patent_count": 1282
+    },
+    {
+      "rank": 7,
+      "name": "LG ELECTRONICS INC.",
+      "patent_count": 1276
+    },
+    {
+      "rank": 8,
+      "name": "Microsoft Technology Licensing, LLC",
+      "patent_count": 1254
+    },
+    {
+      "rank": 9,
+      "name": "QUALCOMM Incorporated",
+      "patent_count": 1191
+    },
+    {
+      "rank": 10,
+      "name": "Apple Inc.",
+      "patent_count": 1166
+    },
+    {
+      "rank": 11,
+      "name": "Amazon Technologies, Inc.",
+      "patent_count": 1130
+    },
+    {
+      "rank": 12,
+      "name": "GOOGLE LLC",
+      "patent_count": 1069
+    },
+    {
+      "rank": 13,
+      "name": "TOYOTA JIDOSHA KABUSHIKI KAISHA",
+      "patent_count": 1035
+    },
+    {
+      "rank": 14,
+      "name": "HUAWEI TECHNOLOGIES CO., LTD.",
+      "patent_count": 933
+    },
+    {
+      "rank": 15,
+      "name": "SONY GROUP CORPORATION",
+      "patent_count": 866
+    },
+    {
+      "rank": 16,
+      "name": "General Electric Company",
+      "patent_count": 844
+    },
+    {
+      "rank": 17,
+      "name": "BOE Technology Group Co., Ltd.",
+      "patent_count": 775
+    },
+    {
+      "rank": 18,
+      "name": "Hyundai Motor Company",
+      "patent_count": 722
+    },
+    {
+      "rank": 19,
+      "name": "The Boeing Company",
+      "patent_count": 702
+    },
+    {
+      "rank": 20,
+      "name": "MITSUBISHI ELECTRIC CORPORATION",
+      "patent_count": 678
+    }
+  ],
+  "top_countries": [
+    {
+      "country": "US",
+      "patent_count": 58539,
+      "share_pct": 35.94
+    },
+    {
+      "country": "JP",
+      "patent_count": 18965,
+      "share_pct": 11.64
+    },
+    {
+      "country": "KR",
+      "patent_count": 8750,
+      "share_pct": 5.37
+    },
+    {
+      "country": "CN",
+      "patent_count": 7838,
+      "share_pct": 4.81
+    },
+    {
+      "country": "DE",
+      "patent_count": 5683,
+      "share_pct": 3.49
+    },
+    {
+      "country": "TW",
+      "patent_count": 4636,
+      "share_pct": 2.85
+    },
+    {
+      "country": "GB",
+      "patent_count": 2670,
+      "share_pct": 1.64
+    },
+    {
+      "country": "CA",
+      "patent_count": 2572,
+      "share_pct": 1.58
+    },
+    {
+      "country": "FR",
+      "patent_count": 1957,
+      "share_pct": 1.2
+    },
+    {
+      "country": "IN",
+      "patent_count": 1750,
+      "share_pct": 1.07
+    },
+    {
+      "country": "IL",
+      "patent_count": 1660,
+      "share_pct": 1.02
+    },
+    {
+      "country": "SE",
+      "patent_count": 1070,
+      "share_pct": 0.66
+    },
+    {
+      "country": "CH",
+      "patent_count": 1043,
+      "share_pct": 0.64
+    },
+    {
+      "country": "NL",
+      "patent_count": 938,
+      "share_pct": 0.58
+    },
+    {
+      "country": "IT",
+      "patent_count": 896,
+      "share_pct": 0.55
+    },
+    {
+      "country": "UNKNOWN",
+      "patent_count": 781,
+      "share_pct": 0.48
+    },
+    {
+      "country": "AU",
+      "patent_count": 538,
+      "share_pct": 0.33
+    },
+    {
+      "country": "FI",
+      "patent_count": 523,
+      "share_pct": 0.32
+    },
+    {
+      "country": "BE",
+      "patent_count": 488,
+      "share_pct": 0.3
+    },
+    {
+      "country": "AT",
+      "patent_count": 470,
+      "share_pct": 0.29
+    }
+  ],
+  "yearly_trends": [
+    {
+      "year": 2018,
+      "patent_count": 164524
+    },
+    {
+      "year": 2019,
+      "patent_count": 335476
+    }
+  ]
+}

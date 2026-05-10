@@ -1,110 +1,88 @@
 # Global Patent Intelligence Data Pipeline
 
-A complete data pipeline that ingests PatentsView TSV data, cleans it with pandas, stores it in SQLite, and generates analytical reports.
+A high-performance data pipeline and interactive analytics dashboard for processing and visualizing global patent trends. This project ingests PatentsView TSV data, cleans it using pandas, stores it in a optimized SQLite database, and provides both a console-based reporting tool and a premium Streamlit dashboard.
 
 ---
 
-## Project Structure
+## 🚀 Key Features
 
-patent-pipeline/
-data/
- raw/        - place downloaded TSV files here
- clean/      - auto-generated cleaned CSVs
-scripts/
- ingest.py    - Step 1: clean & process TSV files
- load_db.py   -  Step 2: load into SQLite
- report.py    -  Step 3: generate reports
-sql/
- schema.sql   - table definitions
- queries.sql  - all 7 analytical queries
-outputs/  
- charts        
- CSV and JSON reports saved here
-patents.db  - SQLite database (auto-created)
-requirements.txt
-README.md
+- **End-to-End Pipeline**: From raw TSV ingestion to relational database storage.
+- **Interactive Dashboard**: Premium UI with real-time filtering, geographic maps, and trend analysis.
+- **Console Reporting**: Instant validation and summary statistics via command line.
+- **Advanced SQL**: Utilizes CTEs, Window Functions, and optimized indexing for large datasets.
+- **Rich Aesthetics**: Custom CSS styling with dark mode optimization and responsive layouts.
 
+---
 
-## Getting the Data
+## 📂 Project Structure
 
-1. Download from: https://data.uspto.gov/bulkdata/datasets/pvgpatdis
-2. Download these TSV files:
-   - `g_patent.tsv` 
-   - `g_patent_abstract.tsv` 
-   - `g_inventor_disambiguated.tsv` 
-   - `g_location_disambiguated.tsv`
-   - `g_assignee_disambiguated.tsv` 
-   
+```text
+Data-pipeline/
+├── data/
+│   ├── raw/            - Place source TSV files here
+│   └── clean/          - Processed CSV files (Patents, Inventors, Companies)
+├── scripts/
+│   ├── ingest.py       - Step 1: Data cleaning & normalization
+│   ├── load_db.py      - Step 2: SQLite database population
+│   ├── dashboard.py    - Step 3: Interactive Streamlit Dashboard
+│   ├── style.css       - Custom CSS for the dashboard
+│   └── console_report.py - Command-line summary report
+├── sql/
+│   ├── schema.sql      - Database table and index definitions
+│   └── queries.sql     - Analytical SQL queries (CTEs, Ranks, Joins)
+├── patents.db          - Optimized SQLite Database (auto-generated)
+└── readme.txt          - Quick-start guide and submission links
+```
 
-## Running the Pipeline
-Run all three steps in order:
+---
 
-# Step 1 — Clean the data
+## 🛠️ Getting Started
+
+### 1. Prerequisites
+Ensure you have Python 3.9+ and the required packages installed:
+```bash
+pip install streamlit pandas plotly sqlite3
+```
+
+### 2. Data Preparation
+1. Download required TSV files from [PatentsView](https://data.uspto.gov/bulkdata/datasets/pvgpatdis).
+2. Place the following files in `data/raw/`:
+   - `g_patent.tsv`, `g_inventor_disambiguated.tsv`, etc.
+
+### 3. Running the Pipeline
+```bash
+# Step 1: Clean and process raw data
 python scripts/ingest.py
 
-# Step 2 — Load into SQLite database
+# Step 2: Load data into SQLite
 python scripts/load_db.py
 
-# Step 3 — Generate all reports
-python scripts/report.py
+# Step 3: Launch the interactive Dashboard
+streamlit run scripts/dashboard.py
+
+# Step 4: Generate Console Summary
+python scripts/console_report.py
+```
 
 ---
 
-## Outputs
+## 📊 Analytical Capabilities
 
-### Cleaned Data
-- `data/clean/clean_patents.csv` 
-- `data/clean/clean_inventors.csv` 
-- `data/clean/clean_companies.csv` 
-
-### Database
-- `patents.db` — SQLite database with all processed data
-
-### Analytical Reports (CSV)
-- `outputs/top_inventors.csv` — Top inventors by patent count
-- `outputs/top_companies.csv` — Top companies by patent count
-- `outputs/country_trends.csv` — Patent trends by country
-- `outputs/yearly_trends.csv` — Patent trends by year
-- `outputs/category_trends.csv` — Technology category trends
-- `outputs/category_summary.csv` — Category distribution summary
-- `outputs/emerging_tech_growth.csv` — Emerging technology growth metrics
-
-### Reports (JSON)
-- `outputs/patent_report.json` — Comprehensive patent analysis report
-
-### Visualizations (PNG Charts)
-- `outputs/charts/top_inventors.png` — Top inventors bar chart
-- `outputs/charts/top_companies.png` — Top companies bar chart
-- `outputs/charts/top_companies_by_category.png` — Companies by technology category
-- `outputs/charts/top_countries.png` — Patents by country
-- `outputs/charts/country_heatmap.png` — Country patent heatmap
-- `outputs/charts/patents_per_year.png` — Patent filings over time
-- `outputs/charts/yearly_trends.png` — Year-over-year trend analysis
-- `outputs/charts/rolling_average.png` — Patent filing rolling average
-- `outputs/charts/category_breakdown.png` — Technology category breakdown
-- `outputs/charts/emerging_tech_growth.png` — Emerging tech growth visualization 
-
-
-## SQL Queries
-
-All 7 required queries are in `sql/queries.sql`:
-
-| Query | Description |
-|-------|-------------|
-| Q1 | Top inventors by patent count |
-| Q2 | Top companies by patent count |
-| Q3 | Top countries with share % |
-| Q4 | Patents per year (1976–2025) |
-| Q5 | JOIN: patents + inventors + companies |
-| Q6 | CTE: above-average inventors |
-| Q7 | RANK: inventors ranked within each country (window functions) |
+The system provides deep insights across four primary dimensions:
+1. **Trends**: Annual grant counts with 5-year rolling averages and peak detection.
+2. **Inventors**: Top global inventors ranked by output with nationality distribution.
+3. **Companies**: Analysis of the world's leading patent holders (Assignees).
+4. **Countries**: Global geographic heatmap with interactive country-level filtering.
 
 ---
 
-## Technologies Used
+## 📜 Project Requirements & Links
 
-- **Python** — data ingestion and pipeline orchestration
-- **pandas** — data cleaning and transformation
-- **SQLite** — relational database storage
-- **SQL** — analytical queries including CTEs and window functions
-- **GitHub** — version control
+- **Dashboard**: http://localhost:8501 (Local)
+- **GitHub**: [NaluyindaMoureen01/Data_pipeline](https://github.com/NaluyindaMoureen01/Data_pipeline)
+- **Database**: SQLite (managed via `sql/schema.sql`)
+
+---
+
+## ⚖️ License
+Distributed under the MIT License. See `LICENSE` for more information.
